@@ -55,7 +55,7 @@ $('#submit').on('click',function(){
    
     var CuisList = document.getElementById('dropdown').value;
 
-    var queryURLGoo = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyAj-er6chMK8h9EkyVlNrj6gcCYe9R0dK4";
+    var queryURLGoo = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyCBXtlBMYT0RJd-PEUp5B82C34_X6bMdf4";
 
   // We then created an AJAX call
     $.ajax({
@@ -76,7 +76,7 @@ $('#submit').on('click',function(){
     var APIKey = "475c3fccef084c21f7295addd8a398be";
     
    // Here we are building the URL we need to query the database
-    var queryURL = "https://developers.zomato.com/api/v2.1/search?count=20&lat="+latitude+"&lon="+ logitude+"&radius=16093"+"&api-key=475c3fccef084c21f7295addd8a398be"
+    var queryURL = "https://developers.zomato.com/api/v2.1/search?count=40&lat="+latitude+"&lon="+ logitude+"&radius=16093"+"&api-key=475c3fccef084c21f7295addd8a398be"
     // We then created an AJAX call
       console.log(queryURL);
     $.ajax({
@@ -103,14 +103,10 @@ $('#submit').on('click',function(){
           if(response.restaurants[i].restaurant.phone_numbers){
            $("#resWell-" +i).append("<strong>Phone Number: </strong>" + response.restaurants[i].restaurant.phone_numbers +"<br>");
           }
-
-
         }
       }
       });
     }); 
-
-
  });
 
 
@@ -119,7 +115,7 @@ $('#submit').on('click',function(){
   
     function initMap() {
         var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 16,
+          zoom: 12,
           center: {lat: 29.7632800, lng: -95.3632700}
         });
         var geocoder = new google.maps.Geocoder();
