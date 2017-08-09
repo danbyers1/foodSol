@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project 1</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="assets/sytle.css">
+   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="https://use.fontawesome.com/fd3fe8c252.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+   
+    <div class="container">
+    <div class="row" >
+    <header><h1>Food Sol</h1>
+        <div class="row">
+          <div class ="col-md-12">
+            <h3><i class="fa fa-cutlery" aria-hidden="true"></i> Budget Foodies Date Nite Restaurant Search <i class="fa fa-cutlery" aria-hidden="true"></i></h3>
+            </div>
+          </div>
+          </header>
+            
+            <div class="row" id="search-area">
+                <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                            <form class="form-control" type="dropdown-menu" id="cuisList"><strong>Cuisine:</strong>
+                            <select id="dropdown">
+                            <option value="Asian">Asian</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="BBQ">BBQ</option>
+                            <option value="Bagels">Bagels</option>
+                            <option value="Bar Food">Bar Food</option>
+                            <option value="American">American</option>
+                            <option value="Beverages">Beverages</option>
+                            <option value="Brazilian">Brazilian</option>
+                            <option value="Bubble Tea">Bubble Tea</option>
+                            <option value="Burger">Burger</option>
+                            <option value="Cafe">Cafe</option>
+                            <option value="Cajun">Cajun</option>
+                            <option value="California">California</option>
+                            <option value="Canadian">Canadian</option>
+                            <option value="Caribbean">Caribbean</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Healthy Food">Healthy Food</option>
+                            <option value="Jamaican">Jamaican</option>
+                            <option value="Mediterranean">Mediterranean</option>
+                            <option value="Mexican">Mexican</option>
+                            <option value="Nigerian">Nigerian</option>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Po 'Boys">Po'Boys</option>
+                            <option value="Pub Food">Pub Food</option>
+                            <option value="Puerto Rican">Puerto Rican</option>
+                            <option value="Salad">Salad</option>
+                            <option value="Sandwich">Sandwich</option>
+                            <option value="Seafood">Seafood</option>
+                            <option value="Soul Food">Soul Food</option>
+                            <option value="Sushi">Sushi</option>
+                            <option value="Taco">Taco</option>
+                            <option value="Thai Food">Thai Food</option>
+                            <option value="Vegetarian">Vegetarian</option>
+                            <option value="Vietnamese">Vietnamese</option>
+                      </select>
+                      </form> 
+                      </div>
+                      </div>            
+             
+              <div class="col-md-3">
+                <div class="input-group">
+                  <input id="address" type="text" class="form-control" placeholder="city or zip">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="submit" value="Geocode"><strong>City or Zip Code</strong></button>
+                </div><!-- /input-group -->
+              </div><!-- /.col-md-6 -->
+        </div>
+
+      </div>
+        <div class="row">
+         <div class = "col-md-6">
+            <div class="panel panel">
+              <div class="panel-heading">
+              <h4><i class="fa fa-info-circle" aria-hidden="true"></i> Restaurant Info:</h4></div>
+            <div class="panel-body" id="enterPanel" id="info">
+           
+          </div>
+      </div>
+      </div>
+
+      <div class = "col-md-6">
+      <div class="panel panel" id="panel">
+        <div class="panel-heading">
+          <h4><i class="fa fa-map" aria-hidden="true"></i> Restaurant Map Location:</h4>   
+          </div>
+          <div class="panel-body">
+        <div id="map"> </div>
+      </div>
+   
+      </div>
+      </div>
+    </div>
+
+
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyAj-er6chMK8h9EkyVlNrj6gcCYe9R0dK4&callback=initMap">
+    </script>
+    <script type="text/javascript" src="assets/app.js"></script>
+</body>
+</html>

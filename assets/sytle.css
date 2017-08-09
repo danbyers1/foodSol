@@ -1,0 +1,128 @@
+
+body{
+    background: url("images/foodsolimage.jpg") no-repeat center center fixed;
+    background-color: #cccccc ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+header{
+	margin-bottom: 10px;
+	margin-top: -10px;
+}
+
+h1{
+	font-size: 90px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #FFB334;
+    font-family: 'Shrikhand', cursive;
+    text-shadow: 4px 4px #B52F45;
+}
+
+h3{
+	font-size: 40px;
+    margin-top: 0;
+    text-align: center;
+    color: #FFB334;
+    font-family: 'Shrikhand', cursive;
+    text-shadow: 2px 2px #B52F45;
+}
+
+h4{
+	font-size: 30px;
+    color: #4A4A61;
+    padding: 0px;
+}
+
+#info{
+	height: 275px;
+}
+
+#map{
+    height: 275px;
+    
+}
+
+#body2{
+	position: relative;
+    z-index: 1;
+}
+
+
+.panel{
+    background-color:#9FB351!important;
+    border-color:#9FB351!important;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    font-size: 10px;
+}
+
+.panel-heading{
+    background-color:#9FB351;
+    color:#9FB351!important;
+    font-family: 'Shrikhand', cursive;
+    text-shadow: 2px 2px #FEAF76;
+    border-top-right-radius:7px;
+    border-top-left-radius:7px;
+    text-align:center;
+    padding:0;
+}
+
+.panel-body{
+    padding:0;
+    background-color: white!important;
+    font-size:15px;
+}
+
+#search-area{
+    padding-bottom: 20px;
+    padding-top:10px;
+}
+
+#enterPanel{
+  height:275px;
+  overflow-y:scroll;
+  width:100%;
+  font-size:15px;
+}
+
+.btn-warning {
+    color: #000000;
+    background-color: #E8E8E8;
+    border:0px;
+    width: 536px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: #B52F45!important;
+    border-color: #B52F45!important;
+    color:white!important;
+   
+}
+
+form{
+    background-color: #B52F45!important;
+    border-color: #B52F45!important;
+    color:white!important;
+    
+}
+
+select{
+    color:#000000!important;
+    width:175px;
+}
+
+@media screen and (max-width: 480px) {
+    .movImage {
+        width: 500px;
+        height: 500px;
+    }
+
+
