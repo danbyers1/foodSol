@@ -103,6 +103,9 @@ $('#submit').on('click',function(){
           if(response.restaurants[i].restaurant.phone_numbers){
            $("#resWell-" +i).append("<strong>Phone Number: </strong>" + response.restaurants[i].restaurant.phone_numbers +"<br>");
           }
+          if(response.restaurants[i].restaurant.user_rating.aggregate_rating){
+           $("#resWell-" +i).append("<strong>Avg User Rating: </strong>" + response.restaurants[i].restaurant.user_rating.aggregate_rating +"<br>");
+          }
         }
       }
       });
